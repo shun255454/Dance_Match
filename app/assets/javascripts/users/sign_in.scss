@@ -1,0 +1,50 @@
+.signinPage {
+  margin-top: 10vh;
+  .title {
+    color:#50bbfd;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .userIcon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: #50bbfd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loginBtn {
+    padding: 12px;
+    width: 200px;
+    border-radius: 21px;
+    background: #50bbfd;
+    color: #fff;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+    opacity: 1;
+    transition: opacity .5s;
+    cursor: pointer;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .guest_user {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #50bbfd;
+    background: #FFF;
+    border: solid 3px #50bbfd;
+    border-radius: 10px;
+    &__email {
+      text-align: center;
+    }
+    &__password {
+      text-align: center;
+    }
+  }
+}
