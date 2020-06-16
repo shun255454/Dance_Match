@@ -4,17 +4,18 @@
     <title>DanceMatch</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
   <% if flash[:notice] %>
-    <p><%= flash[:notice] %></p>
+    <div class="alert alert-info"><%= flash[:notice] %></div>
   <% end %>
   <% if flash[:alert] %>
-    <p><%= flash[:alert] %></p>
+    <div class="alert alert-danger"><%= flash[:alert] %></div>
   <% end %>
     <%= yield %>
   </body>
