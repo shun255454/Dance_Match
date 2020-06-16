@@ -6,6 +6,7 @@ if(/chat/.test(window.location.pathname)) {
     disconnected: function() {},
     received: function(data) {
       $('.messages').append(data['content']);
+      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
     },
     speak: function(message) {
       return this.perform('speak', {
