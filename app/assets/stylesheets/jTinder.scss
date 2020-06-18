@@ -117,7 +117,7 @@ html, body {
 
 #tinderslide .like,
 #tinderslide .dislike {
-  background: image-url("liked.png") no-repeat scroll 0 0;
+  background: image-url("/liked.png") no-repeat scroll 0 0;
   opacity: 0;
   height: 80px;
   position: absolute;
@@ -138,7 +138,7 @@ html, body {
 #tinderslide .dislike {
   right: 45px;
   left: auto;
-  background: image-url("nope.png") no-repeat scroll 0 0;
+  background: image-url("/nope.png") no-repeat scroll 0 0;
 }
 
 #tinderslide .img {
