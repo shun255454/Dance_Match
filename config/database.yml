@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: Dance_Match_production
-  username: Dance_Match
-  password: <%= ENV['DANCE_MATCH_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
